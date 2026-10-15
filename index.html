@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pagecove Privacy Policy</title>
+<meta name="description" content="Privacy policy for Pagecove PDF by Caramelia Studio. Your files never leave your phone.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --background: #E9ECF3;
+    --surface: #FFFFFF;
+    --surface2: #F4F6FB;
+    --line: #DCE0EA;
+    --text: #15172B;
+    --text-secondary: #4A4F6A;
+    --ink: #2F3FBF;
+    --on-ink: #FFFFFF;
+    --ink-on-surface: #2F3FBF;
+    --ink-soft: #E4E7FA;
+    --success: #1F7A4D;
+    --success-soft: #E7F4EC;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --background: #0F1120;
+      --surface: #1A1D2E;
+      --surface2: #23273B;
+      --line: #2E3349;
+      --text: #ECEEF6;
+      --text-secondary: #A3A8C3;
+      --ink: #4C5BE0;
+      --on-ink: #FFFFFF;
+      --ink-on-surface: #A9B3FF;
+      --ink-soft: #262C57;
+      --success: #62D39C;
+      --success-soft: #123222;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --background: #0F1120;
+    --surface: #1A1D2E;
+    --surface2: #23273B;
+    --line: #2E3349;
+    --text: #ECEEF6;
+    --text-secondary: #A3A8C3;
+    --ink: #4C5BE0;
+    --on-ink: #FFFFFF;
+    --ink-on-surface: #A9B3FF;
+    --ink-soft: #262C57;
+    --success: #62D39C;
+    --success-soft: #123222;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--background);
+    color: var(--text);
+    font-family: "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 24px 16px 48px; }
+  header.top { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .logo { width: 36px; height: 36px; flex: none; }
+  .brand { font-size: 22px; font-weight: 800; letter-spacing: -0.01em; }
+  .by { color: var(--text-secondary); font-size: 14px; }
+  .spacer { flex: 1; }
+  .lang {
+    display: inline-flex; background: var(--surface2); border-radius: 12px; padding: 4px; gap: 4px;
+  }
+  .lang button {
+    font: inherit; font-size: 14px; font-weight: 600; color: var(--text-secondary);
+    background: transparent; border: 0; border-radius: 9px; padding: 8px 14px; min-height: 40px; cursor: pointer;
+  }
+  .lang button[aria-pressed="true"] { background: var(--surface); color: var(--text); box-shadow: 0 1px 2px rgba(21,23,43,.12); }
+  .hero {
+    margin-top: 24px; background: var(--ink); color: var(--on-ink);
+    border-radius: 16px; padding: 24px 20px;
+  }
+  .hero h1 { margin: 0 0 6px; font-size: 28px; line-height: 1.2; font-weight: 800; }
+  .hero p { margin: 0; opacity: .92; }
+  .meta { margin-top: 12px; font-size: 14px; opacity: .85; }
+  .glance {
+    margin-top: 16px; background: var(--surface); border-radius: 16px; padding: 16px 20px;
+  }
+  .glance ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+  .glance li { display: flex; gap: 12px; align-items: flex-start; }
+  .check {
+    flex: none; width: 24px; height: 24px; border-radius: 50%; background: var(--ink);
+    display: grid; place-items: center; margin-top: 1px;
+  }
+  .check svg { width: 14px; height: 14px; }
+  section.card { margin-top: 16px; background: var(--surface); border-radius: 16px; padding: 20px; }
+  h2 { margin: 0 0 8px; font-size: 19px; line-height: 1.3; font-weight: 700; }
+  h3 { margin: 16px 0 4px; font-size: 16px; font-weight: 700; }
+  p { margin: 8px 0; }
+  ul.plain { margin: 8px 0; padding-left: 20px; }
+  ul.plain li { margin: 4px 0; }
+  .label {
+    text-transform: uppercase; letter-spacing: .06em; font-size: 12px; font-weight: 700; color: var(--text-secondary);
+    margin: 28px 4px 0;
+  }
+  .svc { border-top: 1px solid var(--line); padding-top: 12px; margin-top: 12px; }
+  .svc:first-of-type { border-top: 0; padding-top: 0; }
+  .note {
+    background: var(--surface2); border-radius: 12px; padding: 12px 14px; margin-top: 12px; color: var(--text-secondary);
+    font-size: 15px;
+  }
+  a { color: var(--ink-on-surface); font-weight: 600; text-underline-offset: 2px; overflow-wrap: anywhere; }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; margin-top: 8px; }
+  th, td { text-align: left; vertical-align: top; padding: 8px 6px; border-top: 1px solid var(--line); }
+  th { font-weight: 700; color: var(--text-secondary); font-size: 13px; text-transform: uppercase; letter-spacing: .04em; border-top: 0; }
+  td code { font-size: 13px; overflow-wrap: anywhere; }
+  footer { margin-top: 32px; text-align: center; color: var(--text-secondary); font-size: 14px; }
+  [hidden] { display: none !important; }
+  @media (max-width: 480px) {
+    .hero h1 { font-size: 24px; }
+    th:nth-child(2), td:nth-child(2) { display: none; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <svg class="logo" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M6 2h8.5L20 7.5V20a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z" fill="#2F3FBF"/>
+      <path d="M14.5 2V6a1.5 1.5 0 0 0 1.5 1.5h4z" fill="#8E9AE6"/>
+      <path d="M8.5 14.5c1.9 2 5.1 2 7 0" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/>
+    </svg>
+    <div>
+      <div class="brand">Pagecove</div>
+      <div class="by">by Caramelia Studio</div>
+    </div>
+    <div class="spacer"></div>
+    <div class="lang" role="group" aria-label="Language / Bahasa">
+      <button type="button" data-lang="en" aria-pressed="true">English</button>
+      <button type="button" data-lang="id" aria-pressed="false">Bahasa Indonesia</button>
+    </div>
+  </header>
+
+  <!-- ===================== ENGLISH ===================== -->
+  <main id="en" lang="en">
+    <div class="hero">
+      <h1>Privacy Policy</h1>
+      <p>Pagecove PDF: Scan, Sign, Merge. Your files never leave your phone.</p>
+      <div class="meta">Effective date: October 15, 2026 · Developer: Caramelia Studio</div>
+    </div>
+
+    <div class="glance" aria-label="At a glance">
+      <ul>
+        <li><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Your PDFs, scans, signatures and stamps are processed only on your phone. We never upload them.</span></li>
+        <li><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>No account, no sign-in, no analytics. We do not run any servers that receive your data.</span></li>
+        <li><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Ads are provided by Google AdMob. Purchases go through Google Play. These Google services may process some data, as described below.</span></li>
+        <li><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>We do not sell your personal information.</span></li>
+      </ul>
+    </div>
+
+    <div class="label">Details</div>
+
+    <section class="card">
+      <h2>1. Who we are</h2>
+      <p>Pagecove (“the app”) is developed and published by <strong>Caramelia Studio</strong> (“we”, “us”). This policy explains what information the app handles, where it goes, and the choices you have. If you have questions, contact us at <a href="mailto:carameliastudio.support@gmail.com">carameliastudio.support@gmail.com</a>.</p>
+    </section>
+
+    <section class="card">
+      <h2>2. Your files</h2>
+      <p>When you open, scan, sign, fill, merge, split, protect, watermark, compress or convert a document, all of that work happens on your device.</p>
+      <ul class="plain">
+        <li>Files you open (from your phone, Google Drive or another app) are copied into the app’s private storage on your phone, so the original is never changed. These working copies are temporary and are cleaned up automatically.</li>
+        <li>Each result is saved only where <em>you</em> choose, using Android’s own file picker, or shared only to the app <em>you</em> pick.</li>
+        <li>Passwords you type to open or protect a PDF are kept in memory only. They are never stored, logged or sent anywhere.</li>
+        <li>We never upload, read, scan for content, or keep copies of your documents.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>3. Information stored on your device</h2>
+      <p>To make the app work, some information is stored locally on your phone. It never leaves your device through our code:</p>
+      <ul class="plain">
+        <li>Your recent files list (file names, page counts and links to the files you chose)</li>
+        <li>Saved signatures and stamps you create</li>
+        <li>Custom ink colors and app settings (for example Appearance and page setup)</li>
+        <li>Whether you have bought “Remove ads”, so the app can stay ad-free when you are offline</li>
+        <li>Simple counters used to space out ads (for example how many files you have saved), so ads are not shown too often</li>
+      </ul>
+      <p>You can delete your recent files, signatures, stamps, colors, settings and temporary files at any time in <strong>Settings → Clear everything</strong>. Uninstalling the app removes everything it stored. Files you saved to your own folders are never deleted by the app.</p>
+      <p>The app does not use Android backup: this information is not copied to your Google account backup.</p>
+    </section>
+
+    <section class="card">
+      <h2>4. Information we collect</h2>
+      <p>We, Caramelia Studio, do not collect personal information. The app has no account system, no analytics or tracking tools of our own, and no servers of ours that receive data from the app.</p>
+      <p>If you email us (for example through <strong>Send feedback</strong> or <strong>Email us</strong>), we receive your email address and whatever you write. If you keep “Include app &amp; device info” switched on, the email also contains the app version, Android version and phone model. You see the full email in your own email app before you send it, and nothing is sent unless you send it. We use these emails only to reply and to improve the app.</p>
+    </section>
+
+    <section class="card">
+      <h2>5. Google services used by the app</h2>
+      <p>The app uses the following services provided by Google. When they are used, Google may collect and process information under its own policies. These are the only parts of the app that use the internet.</p>
+
+      <div class="svc">
+        <h3>Google AdMob (advertising)</h3>
+        <p>Shows a banner ad on some screens and, sometimes, a full-screen ad after you save a file. It is never shown before a file is saved, and never after you buy “Remove ads”. To show and measure ads and to prevent fraud, AdMob may collect your device’s advertising ID, IP address (which can indicate approximate location), device and app information, and how you interact with ads. Depending on your choices and where you live, ads may be personalized or non-personalized.</p>
+        <p><a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from apps that use its services</a></p>
+      </div>
+
+      <div class="svc">
+        <h3>Google User Messaging Platform (consent)</h3>
+        <p>Where the law requires it (for example in the European Economic Area, the UK and Switzerland, and some US states), the app asks for your consent or choices about ads using Google’s consent form. Your choices are stored on your device and shared with Google’s ad services so they can be respected.</p>
+      </div>
+
+      <div class="svc">
+        <h3>Google Play Billing (“Remove ads” purchase)</h3>
+        <p>The one-time “Remove ads” purchase is handled entirely by Google Play. We never see your payment details. The app only receives the purchase status from Google Play, so it can remove ads and restore your purchase on your other devices.</p>
+        <p><a href="https://payments.google.com/payments/apis-secure/get_legal_document?ldo=0&amp;ldt=privacynotice" target="_blank" rel="noopener">Google Payments Privacy Notice</a></p>
+      </div>
+
+      <div class="svc">
+        <h3>Google Play In-App Review</h3>
+        <p>If you tap <strong>Rate Pagecove</strong>, Google Play may show its rating window. Your rating and review are handled by Google Play.</p>
+      </div>
+
+      <div class="svc">
+        <h3>Google ML Kit Document Scanner</h3>
+        <p>When you use Scan, the camera screen is provided by Google Play services. The pages are captured and processed on your device and returned only to the app. Google Play services may download the scanner the first time you use it.</p>
+      </div>
+
+      <p class="note">Google’s privacy policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></p>
+    </section>
+
+    <section class="card">
+      <h2>6. Your ad choices</h2>
+      <ul class="plain">
+        <li><strong>Consent:</strong> if a consent form applies to you, you can change your choices any time in <strong>Settings → Ad privacy choices</strong> (shown when it applies where you live).</li>
+        <li><strong>Advertising ID:</strong> you can reset or delete your advertising ID, or opt out of ads personalization, in your phone’s settings (Settings → Privacy → Ads, or Google → Ads, depending on your phone).</li>
+        <li><strong>No ads:</strong> the one-time “Remove ads” purchase removes all ads in the app.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>7. Permissions</h2>
+      <p>The app does not ask for access to your camera, contacts, location or photos. Files are opened only through the file picker or photo picker that you use yourself. The app declares these permissions:</p>
+      <table>
+        <thead><tr><th>Permission</th><th>Name</th><th>Why</th></tr></thead>
+        <tbody>
+          <tr><td>Internet, network state</td><td><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code></td><td>Used only by the Google services above (ads, consent, purchases, review, scanner).</td></tr>
+          <tr><td>Advertising ID</td><td><code>AD_ID</code>, <code>ACCESS_ADSERVICES_*</code></td><td>Used by Google AdMob to show and measure ads, following your choices.</td></tr>
+          <tr><td>Billing</td><td><code>com.android.vending.BILLING</code></td><td>To buy and restore “Remove ads” through Google Play.</td></tr>
+          <tr><td>Background work</td><td><code>WAKE_LOCK</code>, <code>FOREGROUND_SERVICE</code></td><td>Added by Google’s libraries so their short background tasks can finish.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>8. Children</h2>
+      <p>The app is not directed at children under 13 (or the minimum age in your country). We do not knowingly collect personal information from children. If you believe a child has sent us personal information by email, contact us and we will delete it.</p>
+    </section>
+
+    <section class="card">
+      <h2>9. Security and retention</h2>
+      <p>Your documents and app data stay on your device, protected by Android’s app storage. Temporary working files are deleted automatically, and outputs you don’t save are removed within a day. Emails you send us are kept only as long as needed to help you, and then deleted. Information processed by Google services is kept according to Google’s policies.</p>
+    </section>
+
+    <section class="card">
+      <h2>10. Your rights</h2>
+      <p>Depending on where you live (for example under the GDPR, the UK GDPR, the CCPA/CPRA or Indonesia’s Personal Data Protection Law), you may have rights to access, correct, delete or restrict the use of your personal information, and to withdraw consent. Because we do not keep personal information about you, most of these requests are best handled on your device (Clear everything, or uninstalling the app) or with Google for its services. You can always contact us and we will help.</p>
+    </section>
+
+    <section class="card">
+      <h2>11. Changes to this policy</h2>
+      <p>We may update this policy when the app changes. The new version will be posted at this address with a new effective date. Significant changes will also be mentioned in the app’s release notes on Google Play.</p>
+    </section>
+
+    <section class="card">
+      <h2>12. Contact</h2>
+      <p>Caramelia Studio<br>
+      Email: <a href="mailto:carameliastudio.support@gmail.com">carameliastudio.support@gmail.com</a></p>
+    </section>
+  </main>
+
+  <!-- ===================== BAHASA INDONESIA ===================== -->
+  <main id="id" lang="id" hidden>
+    <div class="hero">
+      <h1>Kebijakan Privasi</h1>
+      <p>Pagecove PDF: Gabung, Scan, TTD. File Anda tidak pernah meninggalkan ponsel Anda.</p>
+      <div class="meta">Berlaku sejak: 15 Oktober 2026 · Pengembang: Caramelia Studio</div>
+    </div>
+
+    <div class="glance" aria-label="Ringkasan">
+      <ul>
+        <li><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>PDF, hasil scan, tanda tangan, dan stempel Anda hanya diproses di ponsel Anda. Kami tidak pernah mengunggahnya.</span></li>
+        <li><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Tanpa akun, tanpa login, tanpa analitik. Kami tidak menjalankan server yang menerima data Anda.</span></li>
+        <li><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Iklan disediakan oleh Google AdMob. Pembelian melalui Google Play. Layanan Google ini dapat memproses sebagian data, seperti dijelaskan di bawah.</span></li>
+        <li><span class="check"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Kami tidak menjual informasi pribadi Anda.</span></li>
+      </ul>
+    </div>
+
+    <div class="label">Rincian</div>
+
+    <section class="card">
+      <h2>1. Tentang kami</h2>
+      <p>Pagecove (“aplikasi”) dikembangkan dan diterbitkan oleh <strong>Caramelia Studio</strong> (“kami”). Kebijakan ini menjelaskan informasi apa yang ditangani aplikasi, ke mana informasi itu pergi, dan pilihan yang Anda miliki. Jika ada pertanyaan, hubungi kami di <a href="mailto:carameliastudio.support@gmail.com">carameliastudio.support@gmail.com</a>.</p>
+    </section>
+
+    <section class="card">
+      <h2>2. File Anda</h2>
+      <p>Saat Anda membuka, memindai, menandatangani, mengisi, menggabungkan, memisahkan, mengunci, memberi watermark, mengecilkan, atau mengonversi dokumen, semua proses itu terjadi di perangkat Anda.</p>
+      <ul class="plain">
+        <li>File yang Anda buka (dari ponsel, Google Drive, atau aplikasi lain) disalin ke penyimpanan pribadi aplikasi di ponsel Anda, sehingga file asli tidak pernah diubah. Salinan kerja ini bersifat sementara dan dibersihkan otomatis.</li>
+        <li>Setiap hasil hanya disimpan di tempat yang <em>Anda</em> pilih melalui pemilih file Android, atau hanya dibagikan ke aplikasi yang <em>Anda</em> pilih.</li>
+        <li>Kata sandi yang Anda ketik untuk membuka atau mengunci PDF hanya disimpan di memori. Kata sandi tidak pernah disimpan, dicatat, atau dikirim ke mana pun.</li>
+        <li>Kami tidak pernah mengunggah, membaca, memindai isi, atau menyimpan salinan dokumen Anda.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>3. Informasi yang disimpan di perangkat Anda</h2>
+      <p>Agar aplikasi berfungsi, sebagian informasi disimpan secara lokal di ponsel Anda. Informasi ini tidak pernah keluar dari perangkat Anda melalui kode kami:</p>
+      <ul class="plain">
+        <li>Daftar file terbaru (nama file, jumlah halaman, dan tautan ke file yang Anda pilih)</li>
+        <li>Tanda tangan dan stempel yang Anda simpan</li>
+        <li>Warna tinta khusus dan pengaturan aplikasi (misalnya Tampilan dan pengaturan halaman)</li>
+        <li>Status pembelian “Hapus iklan”, agar aplikasi tetap tanpa iklan saat offline</li>
+        <li>Penghitung sederhana untuk mengatur jarak iklan (misalnya berapa kali Anda menyimpan file), agar iklan tidak terlalu sering muncul</li>
+      </ul>
+      <p>Anda dapat menghapus daftar file terbaru, tanda tangan, stempel, warna, pengaturan, dan file sementara kapan saja melalui <strong>Pengaturan → Hapus semuanya</strong>. Menghapus instalasi aplikasi akan menghapus semua yang disimpannya. File yang Anda simpan ke folder Anda sendiri tidak pernah dihapus oleh aplikasi.</p>
+      <p>Aplikasi tidak menggunakan cadangan Android: informasi ini tidak disalin ke cadangan Akun Google Anda.</p>
+    </section>
+
+    <section class="card">
+      <h2>4. Informasi yang kami kumpulkan</h2>
+      <p>Kami, Caramelia Studio, tidak mengumpulkan informasi pribadi. Aplikasi tidak memiliki sistem akun, tidak memakai alat analitik atau pelacakan milik kami, dan tidak ada server kami yang menerima data dari aplikasi.</p>
+      <p>Jika Anda mengirim email kepada kami (misalnya melalui <strong>Kirim masukan</strong> atau <strong>Email kami</strong>), kami menerima alamat email Anda dan isi pesan Anda. Jika opsi “Sertakan info aplikasi &amp; perangkat” tetap aktif, email juga berisi versi aplikasi, versi Android, dan model ponsel. Anda melihat seluruh isi email di aplikasi email Anda sendiri sebelum mengirimnya, dan tidak ada yang terkirim kecuali Anda mengirimnya. Email ini hanya kami gunakan untuk membalas dan memperbaiki aplikasi.</p>
+    </section>
+
+    <section class="card">
+      <h2>5. Layanan Google yang digunakan aplikasi</h2>
+      <p>Aplikasi menggunakan layanan berikut yang disediakan oleh Google. Saat digunakan, Google dapat mengumpulkan dan memproses informasi sesuai kebijakannya sendiri. Hanya bagian-bagian inilah yang menggunakan internet.</p>
+
+      <div class="svc">
+        <h3>Google AdMob (iklan)</h3>
+        <p>Menampilkan iklan banner di beberapa layar dan, sesekali, iklan layar penuh setelah Anda menyimpan file. Iklan tidak pernah ditampilkan sebelum file tersimpan, dan tidak pernah setelah Anda membeli “Hapus iklan”. Untuk menampilkan dan mengukur iklan serta mencegah penipuan, AdMob dapat mengumpulkan ID iklan perangkat, alamat IP (yang dapat menunjukkan perkiraan lokasi), informasi perangkat dan aplikasi, serta interaksi Anda dengan iklan. Tergantung pilihan dan lokasi Anda, iklan dapat dipersonalisasi atau tidak dipersonalisasi.</p>
+        <p><a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Cara Google menggunakan informasi dari aplikasi yang memakai layanannya</a></p>
+      </div>
+
+      <div class="svc">
+        <h3>Google User Messaging Platform (persetujuan)</h3>
+        <p>Jika diwajibkan hukum (misalnya di Kawasan Ekonomi Eropa, Inggris, Swiss, dan beberapa negara bagian AS), aplikasi meminta persetujuan atau pilihan Anda tentang iklan melalui formulir persetujuan Google. Pilihan Anda disimpan di perangkat dan diteruskan ke layanan iklan Google agar dihormati.</p>
+      </div>
+
+      <div class="svc">
+        <h3>Google Play Billing (pembelian “Hapus iklan”)</h3>
+        <p>Pembelian sekali bayar “Hapus iklan” sepenuhnya ditangani oleh Google Play. Kami tidak pernah melihat detail pembayaran Anda. Aplikasi hanya menerima status pembelian dari Google Play, agar dapat menghapus iklan dan memulihkan pembelian di perangkat Anda yang lain.</p>
+        <p><a href="https://payments.google.com/payments/apis-secure/get_legal_document?ldo=0&amp;ldt=privacynotice" target="_blank" rel="noopener">Pemberitahuan Privasi Google Payments</a></p>
+      </div>
+
+      <div class="svc">
+        <h3>Google Play In-App Review</h3>
+        <p>Jika Anda mengetuk <strong>Beri nilai Pagecove</strong>, Google Play dapat menampilkan jendela ratingnya. Rating dan ulasan Anda ditangani oleh Google Play.</p>
+      </div>
+
+      <div class="svc">
+        <h3>Google ML Kit Document Scanner</h3>
+        <p>Saat Anda menggunakan Scan, layar kamera disediakan oleh layanan Google Play. Halaman dipotret dan diproses di perangkat Anda lalu hanya dikembalikan ke aplikasi. Layanan Google Play dapat mengunduh pemindai saat pertama kali digunakan.</p>
+      </div>
+
+      <p class="note">Kebijakan privasi Google: <a href="https://policies.google.com/privacy?hl=id" target="_blank" rel="noopener">policies.google.com/privacy</a></p>
+    </section>
+
+    <section class="card">
+      <h2>6. Pilihan iklan Anda</h2>
+      <ul class="plain">
+        <li><strong>Persetujuan:</strong> jika formulir persetujuan berlaku untuk Anda, pilihan dapat diubah kapan saja di <strong>Pengaturan → Pilihan privasi iklan</strong> (muncul jika berlaku di wilayah Anda).</li>
+        <li><strong>ID iklan:</strong> Anda dapat mereset atau menghapus ID iklan, atau menolak personalisasi iklan, di pengaturan ponsel (Setelan → Privasi → Iklan, atau Google → Iklan, tergantung ponsel).</li>
+        <li><strong>Tanpa iklan:</strong> pembelian sekali bayar “Hapus iklan” menghapus semua iklan di aplikasi.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>7. Izin aplikasi</h2>
+      <p>Aplikasi tidak meminta akses ke kamera, kontak, lokasi, atau foto Anda. File hanya dibuka melalui pemilih file atau pemilih foto yang Anda gunakan sendiri. Aplikasi mendeklarasikan izin berikut:</p>
+      <table>
+        <thead><tr><th>Izin</th><th>Nama</th><th>Alasan</th></tr></thead>
+        <tbody>
+          <tr><td>Internet, status jaringan</td><td><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code></td><td>Hanya digunakan oleh layanan Google di atas (iklan, persetujuan, pembelian, ulasan, pemindai).</td></tr>
+          <tr><td>ID iklan</td><td><code>AD_ID</code>, <code>ACCESS_ADSERVICES_*</code></td><td>Digunakan Google AdMob untuk menampilkan dan mengukur iklan, sesuai pilihan Anda.</td></tr>
+          <tr><td>Penagihan</td><td><code>com.android.vending.BILLING</code></td><td>Untuk membeli dan memulihkan “Hapus iklan” melalui Google Play.</td></tr>
+          <tr><td>Proses latar belakang</td><td><code>WAKE_LOCK</code>, <code>FOREGROUND_SERVICE</code></td><td>Ditambahkan oleh pustaka Google agar tugas singkat di latar belakang dapat selesai.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>8. Anak-anak</h2>
+      <p>Aplikasi tidak ditujukan untuk anak di bawah 13 tahun (atau usia minimum di negara Anda). Kami tidak dengan sengaja mengumpulkan informasi pribadi dari anak-anak. Jika Anda yakin seorang anak telah mengirimkan informasi pribadi kepada kami lewat email, hubungi kami dan kami akan menghapusnya.</p>
+    </section>
+
+    <section class="card">
+      <h2>9. Keamanan dan penyimpanan</h2>
+      <p>Dokumen dan data aplikasi Anda tetap di perangkat Anda, dilindungi oleh penyimpanan aplikasi Android. File kerja sementara dihapus otomatis, dan hasil yang tidak Anda simpan dihapus dalam satu hari. Email yang Anda kirim kepada kami hanya disimpan selama diperlukan untuk membantu Anda, lalu dihapus. Informasi yang diproses layanan Google disimpan sesuai kebijakan Google.</p>
+    </section>
+
+    <section class="card">
+      <h2>10. Hak Anda</h2>
+      <p>Tergantung tempat tinggal Anda (misalnya berdasarkan GDPR, UK GDPR, CCPA/CPRA, atau UU Pelindungan Data Pribadi Indonesia), Anda mungkin berhak mengakses, memperbaiki, menghapus, atau membatasi penggunaan informasi pribadi Anda, serta menarik persetujuan. Karena kami tidak menyimpan informasi pribadi tentang Anda, sebagian besar permintaan ini paling tepat dilakukan di perangkat Anda (Hapus semuanya, atau menghapus instalasi aplikasi) atau kepada Google untuk layanannya. Anda selalu dapat menghubungi kami dan kami akan membantu.</p>
+    </section>
+
+    <section class="card">
+      <h2>11. Perubahan kebijakan</h2>
+      <p>Kami dapat memperbarui kebijakan ini saat aplikasi berubah. Versi baru akan dipasang di alamat ini dengan tanggal berlaku yang baru. Perubahan penting juga akan disebutkan di catatan rilis aplikasi di Google Play.</p>
+    </section>
+
+    <section class="card">
+      <h2>12. Kontak</h2>
+      <p>Caramelia Studio<br>
+      Email: <a href="mailto:carameliastudio.support@gmail.com">carameliastudio.support@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer>© 2026 Caramelia Studio · Pagecove</footer>
+</div>
+
+<script>
+  (function () {
+    var buttons = document.querySelectorAll('.lang button');
+    function show(lang) {
+      document.getElementById('en').hidden = lang !== 'en';
+      document.getElementById('id').hidden = lang !== 'id';
+      document.documentElement.lang = lang;
+      document.title = lang === 'id' ? 'Kebijakan Privasi Pagecove' : 'Pagecove Privacy Policy';
+      buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.lang === lang)); });
+      try { localStorage.setItem('pagecove-policy-lang', lang); } catch (e) {}
+    }
+    var start = 'en';
+    try {
+      var saved = localStorage.getItem('pagecove-policy-lang');
+      if (saved === 'en' || saved === 'id') start = saved;
+      else if (/^(id|in)\b/i.test(navigator.language || '')) start = 'id';
+    } catch (e) {
+      if (/^(id|in)\b/i.test(navigator.language || '')) start = 'id';
+    }
+    var hash = (location.hash || '').replace('#', '');
+    if (hash === 'id' || hash === 'en') start = hash;
+    buttons.forEach(function (b) { b.addEventListener('click', function () { show(b.dataset.lang); }); });
+    show(start);
+  })();
+</script>
+</body>
+</html>
